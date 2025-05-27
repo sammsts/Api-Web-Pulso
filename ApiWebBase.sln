@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{2CB8DEF6-21CC-42A4-AADD-A9A01394DB36}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		LICENSE.txt = LICENSE.txt
 	EndProjectSection
 EndProject
@@ -41,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {357ED386-0BD6-4136-8021-48221C6109B3}
 	EndGlobalSection
 EndGlobal

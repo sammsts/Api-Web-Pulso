@@ -29,3 +29,4 @@ C:\Projetos\Api-Web-Base\Application\obj\Debug\net8.0\Application.dll
 C:\Projetos\Api-Web-Base\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Projetos\Api-Web-Base\Application\obj\Debug\net8.0\Application.pdb
 C:\Projetos\Api-Web-Base\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Projetos\Api-Web-Base\Application\obj\Debug\net8.0\Application.sourcelink.json
