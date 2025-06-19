@@ -1,8 +1,7 @@
-# Api-Web-Base
+# Api-Web-Pulso
 
 ## Overview
 
-Api-Web-Base is a clean and extensible RESTful API template built with ASP.NET Core, implementing a layered architecture (Domain, Application, Infrastructure, API) with generic base controllers and auditing middleware. This project aims to provide a solid foundation for rapid development of CRUD-based APIs with built-in request auditing.
 
 ## Features
 
@@ -10,7 +9,7 @@ Api-Web-Base is a clean and extensible RESTful API template built with ASP.NET C
   - **Domain**: Entities and business models
   - **Application**: Interfaces, services, business logic
   - **Infrastructure**: Data persistence (EF Core DbContext), external services implementations
-  - **ApiWebBase**: Presentation layer with Controllers and Middleware
+  - **ApiWebPulso**: Presentation layer with Controllers and Middleware
 - Generic base controllers with reusable CRUD actions (List, Insert, Update, Delete)
 - Middleware for automatic auditing of POST, PUT, DELETE requests
 - Audit logs saved with user info, action, entity, timestamp, IP address, and user agent
@@ -49,12 +48,3 @@ The API automatically logs user actions on POST, PUT, and DELETE requests throug
 - Define repositories and services in Application layer
 - Implement database context and repositories in Infrastructure
 - Create concrete controllers inheriting from BaseController<T>
-
-## Usage and Contributions
-
-Feel free to **use, fork, and modify** this boilerplate for your own projects and repositories.
-
-However, this repository **does not accept pull requests or external contributions**.  
-All improvements should be made in your own forks or separate projects.
-
-Licensed under the MIT License.
