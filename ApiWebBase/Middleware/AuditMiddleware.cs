@@ -2,7 +2,7 @@
 using Domain.Entities;
 using System.Security.Claims;
 
-namespace ApiWebBase.Middleware
+namespace ApiWebPulso.Middleware
 {
     public class AuditMiddleware
     {

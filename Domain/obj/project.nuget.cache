@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/RUv+FQ1h+s=",
+  "dgSpecHash": "W7CpLg8K6+Q=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

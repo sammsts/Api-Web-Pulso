@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiWebBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaedfb92717ecd0ea02587a78648dd4eff2d12f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3f419d5a712e853291596ba519ae2ed232cd5e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiWebBase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiWebBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

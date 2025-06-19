@@ -6,7 +6,7 @@ using Domain.Configurations;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 
-namespace ApiWebBase.Infrastructure
+namespace ApiWebPulso.Infrastructure
 {
     public static class DependencyInjection
     {

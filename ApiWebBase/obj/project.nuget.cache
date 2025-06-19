@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KJSGjCNgHv0=",
+  "dgSpecHash": "UDxBQ3wYAjQ=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Api-Web-Base\\ApiWebBase\\ApiWebBase.csproj",
+  "projectFilePath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\ApiWebBase\\ApiWebPulso.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sammsts\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\sammsts\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

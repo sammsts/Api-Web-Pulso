@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace ApiWebBase.Extensions
+namespace ApiWebPulso.Extensions
 {
     public static class JwtServiceExtensions
     {

@@ -1,6 +1,6 @@
-﻿using ApiWebBase.Middleware;
+﻿using ApiWebPulso.Middleware;
 
-namespace ApiWebBase.Extensions
+namespace ApiWebPulso.Extensions
 {
     public static class MiddlewareExtensions
     {

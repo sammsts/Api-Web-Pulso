@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Api-Web-Base\\ApiWebBase\\ApiWebBase.csproj": {}
+    "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\ApiWebBase\\ApiWebBase.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Api-Web-Base\\ApiWebBase\\ApiWebBase.csproj": {
+    "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\ApiWebBase\\ApiWebBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Api-Web-Base\\ApiWebBase\\ApiWebBase.csproj",
+        "projectUniqueName": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\ApiWebBase\\ApiWebBase.csproj",
         "projectName": "ApiWebBase",
-        "projectPath": "C:\\Projetos\\Api-Web-Base\\ApiWebBase\\ApiWebBase.csproj",
+        "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\ApiWebBase\\ApiWebBase.csproj",
         "packagesPath": "C:\\Users\\sammsts\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Api-Web-Base\\ApiWebBase\\obj\\",
+        "outputPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\ApiWebBase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sammsts\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,14 +29,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projetos\\Api-Web-Base\\Application\\Application.csproj": {
-                "projectPath": "C:\\Projetos\\Api-Web-Base\\Application\\Application.csproj"
+              "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\Application.csproj"
               },
-              "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj"
+              "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj"
               },
-              "C:\\Projetos\\Api-Web-Base\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Projetos\\Api-Web-Base\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\Projetos\\Api-Web-Base\\Application\\Application.csproj": {
+    "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Api-Web-Base\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Projetos\\Api-Web-Base\\Application\\Application.csproj",
+        "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\sammsts\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Api-Web-Base\\Application\\obj\\",
+        "outputPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sammsts\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -123,8 +123,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj"
+              "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj"
               }
             }
           }
@@ -177,14 +177,14 @@
         }
       }
     },
-    "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj": {
+    "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\sammsts\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Api-Web-Base\\Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sammsts\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -238,14 +238,14 @@
         }
       }
     },
-    "C:\\Projetos\\Api-Web-Base\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Api-Web-Base\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Projetos\\Api-Web-Base\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\sammsts\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Api-Web-Base\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sammsts\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -263,11 +263,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projetos\\Api-Web-Base\\Application\\Application.csproj": {
-                "projectPath": "C:\\Projetos\\Api-Web-Base\\Application\\Application.csproj"
+              "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\Application.csproj": {
+                "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Application\\Application.csproj"
               },
-              "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj"
+              "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj"
               }
             }
           }

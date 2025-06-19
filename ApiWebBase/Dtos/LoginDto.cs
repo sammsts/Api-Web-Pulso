@@ -1,4 +1,4 @@
-﻿namespace ApiWebBase.Dtos
+﻿namespace ApiWebPulso.Dtos
 {
     public class LoginDto
     {

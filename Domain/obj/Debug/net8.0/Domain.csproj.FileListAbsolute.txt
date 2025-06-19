@@ -22,3 +22,15 @@ C:\Projetos\Api-Web-Base\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Projetos\Api-Web-Base\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Projetos\Api-Web-Base\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\Projetos\Api-Web-Base\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\bin\Debug\net8.0\Domain.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\Domain.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Domain\obj\Debug\net8.0\ref\Domain.dll

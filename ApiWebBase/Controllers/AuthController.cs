@@ -1,4 +1,4 @@
-﻿using ApiWebBase.Dtos;
+﻿using ApiWebPulso.Dtos;
 using Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Projetos\\Api-Web-Base\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\sammsts\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Api-Web-Base\\Domain\\obj\\",
+      "outputPath": "C:\\Projetos\\servidor-pulso\\Api-Web-Pulso\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sammsts\\AppData\\Roaming\\NuGet\\NuGet.Config",

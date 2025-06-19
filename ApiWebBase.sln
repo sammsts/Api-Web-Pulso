@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{6AC3CA43-52ED-40F1-BC6A-7B18FB0B8AFB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiWebBase", "ApiWebBase\ApiWebBase.csproj", "{9B85BE20-4A4A-43F6-BE2F-3998F36D591B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiWebPulso", "ApiWebBase\ApiWebPulso.csproj", "{9B85BE20-4A4A-43F6-BE2F-3998F36D591B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{E4B54B01-A695-4AB6-A174-6D013F9A27D8}"
 EndProject

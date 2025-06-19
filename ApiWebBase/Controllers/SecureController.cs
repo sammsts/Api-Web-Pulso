@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiWebBase.Controllers
+namespace ApiWebPulso.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
