@@ -1,5 +1,6 @@
 ﻿using ApiWebPulso.Dtos;
 using Application.Interfaces;
+using Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -7,21 +8,27 @@ using Microsoft.AspNetCore.Mvc;
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
+    private readonly IUserService _userService;
 
-    public AuthController(IAuthService authService)
+    public AuthController(IAuthService authService, IUserService userService)
     {
         _authService = authService;
+        _userService = userService;
     }
 
     [HttpPost("login")]
-    public IActionResult Login([FromBody] LoginDto login)
+    public async Task<IActionResult> Login([FromBody] LoginDto login)
     {
-        if (login.Username != "admin" || login.Password != "senha123")
-            return Unauthorized();
+        try
+        {
+            var accessToken = await _authService.GenerateTokenAsync(login.Username, login.Password);
+            var refreshToken = Guid.NewGuid().ToString();
 
-        var accessToken = _authService.GenerateTokenAsync(login.Username, login.Password);
-        var refreshToken = Guid.NewGuid().ToString();
-
-        return Ok(new { accessToken, refreshToken });
+            return Ok(new { accessToken, refreshToken });
+        }
+        catch (UnauthorizedAccessException)
+        {
+            return Unauthorized("Usuário ou senha inválidos.");
+        }
     }
 }

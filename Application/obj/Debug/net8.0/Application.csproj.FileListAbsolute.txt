@@ -46,3 +46,5 @@ C:\Projetos\servidor-pulso\Api-Web-Pulso\Application\obj\Debug\net8.0\Applicatio
 C:\Projetos\servidor-pulso\Api-Web-Pulso\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Projetos\servidor-pulso\Api-Web-Pulso\Application\obj\Debug\net8.0\Application.pdb
 C:\Projetos\servidor-pulso\Api-Web-Pulso\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Application\bin\Debug\net8.0\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Application\bin\Debug\net8.0\ApiWebPulso.Contracts.pdb

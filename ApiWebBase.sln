@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 		LICENSE.txt = LICENSE.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWebPulso.Contracts", "ApiWebPulso.Contracts\ApiWebPulso.Contracts.csproj", "{5031788D-162F-43C0-A33F-5730FEFEB47F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E4B54B01-A695-4AB6-A174-6D013F9A27D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4B54B01-A695-4AB6-A174-6D013F9A27D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4B54B01-A695-4AB6-A174-6D013F9A27D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5031788D-162F-43C0-A33F-5730FEFEB47F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5031788D-162F-43C0-A33F-5730FEFEB47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5031788D-162F-43C0-A33F-5730FEFEB47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5031788D-162F-43C0-A33F-5730FEFEB47F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

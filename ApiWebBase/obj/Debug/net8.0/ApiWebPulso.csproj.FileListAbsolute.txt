@@ -205,3 +205,6 @@ C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\obj\Debug\net8.0\refint\ApiW
 C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\obj\Debug\net8.0\ApiWebPulso.pdb
 C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\obj\Debug\net8.0\ApiWebPulso.genruntimeconfig.cache
 C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\obj\Debug\net8.0\ref\ApiWebPulso.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\ApiWebPulso.Contracts.pdb

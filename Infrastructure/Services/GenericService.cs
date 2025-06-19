@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Application.Services
 {
@@ -18,6 +19,11 @@ namespace Application.Services
         public async Task<IEnumerable<T>> GetAllAsync() => await _dbSet.ToListAsync();
 
         public async Task<T?> GetByIdAsync(Guid id) => await _dbSet.FindAsync(id);
+
+        public async Task<T?> GetFirstOrDefaultAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().FirstOrDefaultAsync(predicate);
+        }
 
         public async Task CreateAsync(T entity)
         {

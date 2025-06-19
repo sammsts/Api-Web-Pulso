@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.11.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.11.0" />
@@ -8,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\ApiWebPulso.Contracts\ApiWebPulso.Contracts.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

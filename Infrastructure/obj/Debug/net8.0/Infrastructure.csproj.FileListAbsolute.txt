@@ -52,3 +52,5 @@ C:\Projetos\servidor-pulso\Api-Web-Pulso\Infrastructure\obj\Debug\net8.0\Infrast
 C:\Projetos\servidor-pulso\Api-Web-Pulso\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\Projetos\servidor-pulso\Api-Web-Pulso\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Projetos\servidor-pulso\Api-Web-Pulso\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Infrastructure\bin\Debug\net8.0\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\Infrastructure\bin\Debug\net8.0\ApiWebPulso.Contracts.pdb

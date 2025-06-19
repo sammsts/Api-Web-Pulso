@@ -15,9 +15,12 @@ namespace ApiWebPulso.Infrastructure
             services.Configure<JwtOptions>(config.GetSection("Jwt"));
 
             #region Services
+            services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IAuditService, AuditService>();
-            services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
+            
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IPunchService, PunchService>();
             #endregion
 
             #region Repositories

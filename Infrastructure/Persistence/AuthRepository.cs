@@ -1,34 +1,36 @@
 ﻿using Application.Interfaces;
+using Domain.Entities;
 
 namespace Infrastructure.Persistence
 {
     public class AuthRepository : IAuthRepository
     {
-        // Simulated user data (this could be injected with a DbContext in a real application)
-        private readonly Dictionary<string, (string Password, string Role)> _users = new()
-        {
-            { "admin", ("senha123", "Admin") },
-            { "user", ("senha456", "User") }
-        };
+        private readonly IGenericService<User> _userService;
 
-        public Task<bool> ValidateUserCredentialsAsync(string username, string password)
+        public AuthRepository(IGenericService<User> userService)
         {
-            if (_users.TryGetValue(username, out var userInfo))
-            {
-                return Task.FromResult(userInfo.Password == password);
-            }
-
-            return Task.FromResult(false);
+            _userService = userService;
         }
 
-        public Task<string?> GetUserRoleAsync(string username)
+        public async Task<bool> ValidateUserCredentialsAsync(string username, string password)
         {
-            if (_users.TryGetValue(username, out var userInfo))
+            try
             {
-                return Task.FromResult<string?>(userInfo.Role);
-            }
+                var user = await _userService.GetFirstOrDefaultAsync(u => u.Username == username);
+                if (user == null) return false;
 
-            return Task.FromResult<string?>(null);
+                return BCrypt.Net.BCrypt.Verify(password, user.PasswordHash);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao validar usuário: {ex.Message}", ex);
+            }
+        }
+
+        public async Task<string?> GetUserRoleAsync(string username)
+        {
+            var user = await _userService.GetFirstOrDefaultAsync(u => u.Username == username);
+            return user?.Role ?? "User";
         }
     }
 }

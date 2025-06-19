@@ -8,23 +8,12 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddApplicationDbContext(this IServiceCollection services, IConfiguration configuration)
     {
-        var dbProvider = configuration["DatabaseProvider"] ?? "SqlServer";
+        var dbProvider = configuration["DatabaseProvider"];
         var connStr = configuration.GetConnectionString("DefaultConnection")!;
 
         services.AddDbContext<ApplicationDbContext>(options =>
         {
-            switch (dbProvider)
-            {
-                case "PostgreSQL":
-                    options.UseNpgsql(connStr);
-                    break;
-                case "Sqlite":
-                    options.UseSqlite(connStr);
-                    break;
-                default:
-                    options.UseSqlServer(connStr);
-                    break;
-            }
+            options.UseNpgsql(connStr);
         });
 
         return services;
