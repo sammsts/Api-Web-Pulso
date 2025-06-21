@@ -12,14 +12,14 @@ namespace Infrastructure.Persistence
             _userService = userService;
         }
 
-        public async Task<bool> ValidateUserCredentialsAsync(string username, string password)
+        public async Task<User> GetValidUserAsync(string username, string password)
         {
             try
             {
                 var user = await _userService.GetFirstOrDefaultAsync(u => u.Username == username);
-                if (user == null) return false;
+                if (user == null) return null;
 
-                return BCrypt.Net.BCrypt.Verify(password, user.PasswordHash);
+                return BCrypt.Net.BCrypt.Verify(password, user.PasswordHash) ? user : null;
             }
             catch (Exception ex)
             {
@@ -27,10 +27,5 @@ namespace Infrastructure.Persistence
             }
         }
 
-        public async Task<string?> GetUserRoleAsync(string username)
-        {
-            var user = await _userService.GetFirstOrDefaultAsync(u => u.Username == username);
-            return user?.Role ?? "User";
-        }
     }
 }

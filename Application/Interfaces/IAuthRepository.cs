@@ -1,8 +1,9 @@
-﻿namespace Application.Interfaces
+﻿using Domain.Entities;
+
+namespace Application.Interfaces
 {
     public interface IAuthRepository
     {
-        Task<bool> ValidateUserCredentialsAsync(string username, string password);
-        Task<string?> GetUserRoleAsync(string username);
+        Task<User> GetValidUserAsync(string username, string password);
     }
 }

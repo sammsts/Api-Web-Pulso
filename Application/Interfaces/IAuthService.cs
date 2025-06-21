@@ -1,7 +1,9 @@
-﻿namespace Application.Interfaces
+﻿using ApiWebPulso.Contracts.Dtos;
+
+namespace Application.Interfaces
 {
     public interface IAuthService
     {
-        Task<string> GenerateTokenAsync(string username, string password);
+        Task<AuthResultDto> GenerateTokenAsync(string username, string password);
     }
 }

@@ -1,4 +1,5 @@
-﻿using Application.Interfaces;
+﻿using ApiWebPulso.Contracts.Dtos;
+using Application.Interfaces;
 using Domain.Configurations;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -19,20 +20,21 @@ namespace Application.Services
             _options = options.Value;
         }
 
-        public async Task<string> GenerateTokenAsync(string username, string password)
+        public async Task<AuthResultDto> GenerateTokenAsync(string username, string password)
         {
-            var isValid = await _authRepository.ValidateUserCredentialsAsync(username, password);
+            var user = await _authRepository.GetValidUserAsync(username, password);
 
-            if (!isValid)
+            if (user == null)
                 throw new UnauthorizedAccessException("Invalid credentials");
 
-            var role = await _authRepository.GetUserRoleAsync(username);
-
             var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, username),
-            new Claim(ClaimTypes.Role, role ?? "User")
-        };
+            {
+                new Claim("UserId", user.Id.ToString()),
+                new Claim("Username", username),
+                new Claim("Fullname", user.FullName),
+                new Claim("Email", user.Email ?? ""),
+                new Claim("Role", user.Role ?? "User")
+            };
 
             var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_options.Key));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -45,7 +47,21 @@ namespace Application.Services
                 signingCredentials: creds
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            var accessToken = new JwtSecurityTokenHandler().WriteToken(token);
+
+            return new AuthResultDto
+            {
+                AccessToken = accessToken,
+                RefreshToken = Guid.NewGuid().ToString(),
+                User = new UserDto
+                {
+                    UserId = user.Id.ToString(),
+                    Username = user.Username,
+                    Fullname = user.FullName,
+                    Email = user.Email,
+                    Role = user.Role
+                }
+            };
         }
     }
 }

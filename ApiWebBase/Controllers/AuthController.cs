@@ -21,10 +21,8 @@ public class AuthController : ControllerBase
     {
         try
         {
-            var accessToken = await _authService.GenerateTokenAsync(login.Username, login.Password);
-            var refreshToken = Guid.NewGuid().ToString();
-
-            return Ok(new { accessToken, refreshToken });
+            var result = await _authService.GenerateTokenAsync(login.Username, login.Password);
+            return Ok(result);
         }
         catch (UnauthorizedAccessException)
         {
