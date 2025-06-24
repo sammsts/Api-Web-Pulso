@@ -14,17 +14,23 @@ public class PunchesController : ControllerBase
         _punchService = punchService;
     }
 
-    [HttpPost("{userId}")]
-    public async Task<IActionResult> Punch(Guid userId, [FromBody] PunchDto dto)
+    [HttpPost]
+    public async Task<IActionResult> Punch([FromBody] PunchDto dto)
     {
-        var punch = await _punchService.PunchAsync(userId, dto.Type);
+        var userId = User.FindFirst("UserId")?.Value;
+        if (string.IsNullOrEmpty(userId)) return Unauthorized();
+
+        var punch = await _punchService.PunchAsync(Guid.Parse(userId), dto.Type);
         return Ok(punch);
     }
 
-    [HttpGet("{userId}/history")]
-    public async Task<IActionResult> History(Guid userId)
+    [HttpGet("history")]
+    public async Task<IActionResult> History()
     {
-        var history = await _punchService.GetHistoryAsync(userId);
+        var userId = User.FindFirst("UserId")?.Value;
+        if (string.IsNullOrEmpty(userId)) return Unauthorized();
+
+        var history = await _punchService.GetHistoryAsync(Guid.Parse(userId));
         return Ok(history);
     }
 }

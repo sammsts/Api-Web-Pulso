@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiWebPulso")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+970f36b34d4cff984bd87ffc34c28f984e02f380")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1e60965b6b9640fdcb0b3c550f61d046f81c939")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiWebPulso")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiWebPulso")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
