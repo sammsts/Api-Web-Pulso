@@ -1,0 +1,3 @@
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\ApiWebPulso.Contracts.deps.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\ApiWebPulso.Contracts.pdb

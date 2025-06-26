@@ -1,0 +1,12 @@
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\bin\Release\net8.0\ApiWebPulso.Contracts.deps.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\bin\Release\net8.0\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\bin\Release\net8.0\ApiWebPulso.Contracts.pdb
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ApiWebPulso.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ApiWebPulso.Contracts.AssemblyInfoInputs.cache
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ApiWebPulso.Contracts.AssemblyInfo.cs
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ApiWebPulso.Contracts.csproj.CoreCompileInputs.cache
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ApiWebPulso.Contracts.sourcelink.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\refint\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ApiWebPulso.Contracts.pdb
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebPulso.Contracts\obj\Release\net8.0\ref\ApiWebPulso.Contracts.dll

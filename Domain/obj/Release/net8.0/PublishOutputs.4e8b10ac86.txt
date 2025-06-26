@@ -1,0 +1,3 @@
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Domain.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Domain.deps.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Domain.pdb

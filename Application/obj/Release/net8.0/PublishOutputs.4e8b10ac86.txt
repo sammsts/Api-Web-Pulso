@@ -1,0 +1,17 @@
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Application.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Application.deps.json
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Application.pdb
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\BCrypt.Net-Next.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.Extensions.Options.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.Extensions.Primitives.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.IdentityModel.Abstractions.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.IdentityModel.Logging.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Microsoft.IdentityModel.Tokens.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\System.IdentityModel.Tokens.Jwt.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\ApiWebPulso.Contracts.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Domain.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\Domain.pdb
+C:\Projetos\servidor-pulso\Api-Web-Pulso\publish\ApiWebPulso.Contracts.pdb
