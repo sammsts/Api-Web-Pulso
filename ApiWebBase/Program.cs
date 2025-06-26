@@ -49,6 +49,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddAuthorization();
 
 var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
+Console.WriteLine("DEFAULT CONNECTION: " + builder.Configuration.GetConnectionString("DefaultConnection"));
+
 
 builder.Services.AddCors(options =>
 {
