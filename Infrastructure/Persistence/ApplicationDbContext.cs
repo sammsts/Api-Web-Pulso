@@ -36,9 +36,18 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Punch>(entity =>
         {
             entity.ToTable("Punches");
+
             entity.HasKey(p => p.Id);
-            entity.Property(p => p.Type).IsRequired();
-            entity.Property(p => p.Timestamp).IsRequired();
+            entity.Property(p => p.Id).HasColumnName("id");
+            entity.Property(p => p.UserId).HasColumnName("user_id").IsRequired();
+            entity.Property(p => p.Timestamp).HasColumnName("timestamp").IsRequired();
+            entity.Property(p => p.Type).HasColumnName("type").IsRequired();
+            entity.Property(p => p.Latitude).HasColumnName("latitude");
+            entity.Property(p => p.Longitude).HasColumnName("longitude");
+            entity.Property(p => p.Address).HasColumnName("address");
+            entity.Property(p => p.ManuallyEdited).HasColumnName("manually_edited").HasDefaultValue(false);
+            entity.Property(p => p.CreatedAt).HasColumnName("created_at").HasDefaultValueSql("CURRENT_TIMESTAMP");
+            entity.Property(p => p.UpdatedAt).HasColumnName("updated_at");
 
             entity.HasOne(p => p.User)
                   .WithMany()

@@ -21,6 +21,7 @@ namespace ApiWebPulso.Infrastructure
             
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IPunchService, PunchService>();
+            services.AddScoped<IReportService, ReportService>();
             #endregion
 
             #region Repositories

@@ -208,3 +208,5 @@ C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\obj\Debug\net8.0\ref\ApiWebP
 C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\ApiWebPulso.Contracts.dll
 C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\ApiWebPulso.Contracts.pdb
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Projetos\servidor-pulso\Api-Web-Pulso\ApiWebBase\bin\Debug\net8.0\itextsharp.dll

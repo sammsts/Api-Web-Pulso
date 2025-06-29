@@ -3,9 +3,11 @@ using ApiWebPulso.Infrastructure;
 using Infrastructure.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
+using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddEnvironmentVariables();
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
 // 1. Add Controllers
 builder.Services.AddControllers();

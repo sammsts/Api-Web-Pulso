@@ -1,6 +1,7 @@
 ﻿using ApiWebPulso.Contracts.Dtos;
 using Application.Interfaces;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -21,10 +22,12 @@ public class UsersController : ControllerBase
         return Ok();
     }
 
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetById(Guid id)
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> GetById()
     {
-        var user = await _userService.GetByIdAsync(id);
+        var id = User.FindFirst("UserId")?.Value;
+        var user = await _userService.GetByIdAsync(Guid.Parse(id));
         return Ok(user);
     }
 }

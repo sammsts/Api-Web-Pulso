@@ -1,8 +1,9 @@
 ﻿using ApiWebPulso.Dtos;
 using Application.Interfaces;
-using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class PunchesController : ControllerBase
@@ -20,7 +21,7 @@ public class PunchesController : ControllerBase
         var userId = User.FindFirst("UserId")?.Value;
         if (string.IsNullOrEmpty(userId)) return Unauthorized();
 
-        var punch = await _punchService.PunchAsync(Guid.Parse(userId), dto.Type);
+        var punch = await _punchService.PunchAsync(Guid.Parse(userId), dto);
         return Ok(punch);
     }
 
@@ -32,5 +33,35 @@ public class PunchesController : ControllerBase
 
         var history = await _punchService.GetHistoryAsync(Guid.Parse(userId));
         return Ok(history);
+    }
+
+    [HttpGet("day")]
+    public async Task<IActionResult> GetPunchesOfDay()
+    {
+        var userId = User.FindFirst("UserId")?.Value;
+        if (string.IsNullOrEmpty(userId)) return Unauthorized();
+
+        var punches = await _punchService.GetPunchesOfDay(Guid.Parse(userId));
+        return Ok(punches);
+    }
+
+    [HttpPost("update")]
+    public async Task<IActionResult> UpdatePunch([FromBody] PunchDto dto)
+    {
+        var userId = User.FindFirst("UserId")?.Value;
+        if (string.IsNullOrEmpty(userId)) return Unauthorized();
+
+        var punch = await _punchService.UpdatePunchAsync(Guid.Parse(userId), dto);
+        return Ok(punch);
+    }
+
+    [HttpDelete("{punchId}")]
+    public async Task<IActionResult> DeletePunch(Guid punchId)
+    {
+        var userId = User.FindFirst("UserId")?.Value;
+        if (string.IsNullOrEmpty(userId)) return Unauthorized();
+
+        await _punchService.DeletePunchAsync(punchId);
+        return Ok("Deletado com sucesso");
     }
 }

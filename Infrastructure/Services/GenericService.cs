@@ -25,6 +25,12 @@ namespace Application.Services
             return await _context.Set<T>().FirstOrDefaultAsync(predicate);
         }
 
+        public async Task<List<T>> GetWhereAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
+        }
+
+
         public async Task CreateAsync(T entity)
         {
             _dbSet.Add(entity);
