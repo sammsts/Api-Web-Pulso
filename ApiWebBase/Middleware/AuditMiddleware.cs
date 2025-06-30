@@ -26,7 +26,7 @@ namespace ApiWebPulso.Middleware
             if (request.Method == HttpMethods.Post || request.Method == HttpMethods.Put || request.Method == HttpMethods.Delete &&
                 context.Response.StatusCode is >= 200 and < 300)
             {
-                var userId = context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "anonymous";
+                var userId = context.User?.FindFirst("UserId")?.Value ?? "anonymous";
                 var ipAddress = context.Connection.RemoteIpAddress?.ToString() ?? "unknown";
                 var userAgent = request.Headers["User-Agent"].ToString();
                 var entityName = request.Path.Value?.Split('/').Skip(1).FirstOrDefault() ?? "unknown";
