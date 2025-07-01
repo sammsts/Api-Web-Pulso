@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using System.Runtime.InteropServices;
 
 namespace Application.Utils
 {
@@ -52,7 +53,11 @@ namespace Application.Utils
 
             foreach (var punch in punches)
             {
-                var localTimestamp = punch.Timestamp.ToLocalTime();
+                var timeZone = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
+                    ? TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time")
+                    : TimeZoneInfo.FindSystemTimeZoneById("America/Sao_Paulo");
+                var localTimestamp = TimeZoneInfo.ConvertTimeFromUtc(punch.Timestamp, timeZone);
+
                 AddCell(table, localTimestamp.ToString("dd/MM/yyyy HH:mm:ss"), cellFont);
                 AddCell(table, punch.Type == 0 ? "Entrada" : "Saída", cellFont);
                 AddCell(table, punch.Address ?? "-", cellFont);
