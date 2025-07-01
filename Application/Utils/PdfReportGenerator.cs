@@ -52,7 +52,8 @@ namespace Application.Utils
 
             foreach (var punch in punches)
             {
-                AddCell(table, punch.Timestamp.ToString("dd/MM/yyyy HH:mm:ss"), cellFont);
+                var localTimestamp = punch.Timestamp.ToLocalTime();
+                AddCell(table, localTimestamp.ToString("dd/MM/yyyy HH:mm:ss"), cellFont);
                 AddCell(table, punch.Type == 0 ? "Entrada" : "Saída", cellFont);
                 AddCell(table, punch.Address ?? "-", cellFont);
             }
